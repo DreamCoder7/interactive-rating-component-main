@@ -168,9 +168,10 @@ body {
   background-color: var(--color--very--dark--blue);
   font-size: 11px;
   text-align: center;
+  font-size: 1.6rem;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--color--primary--Orange);
 }
 /* 1200px */
 @media (max-width: 75em) {
