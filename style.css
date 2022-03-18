@@ -1,0 +1,221 @@
+:root {
+  --color--primary--Orange: hsl(25, 97%, 53%);
+  --color--secondary--Orange: hsl(25, 97%, 60%);
+
+  --color--white: hsl(0, 0%, 100%);
+  --color--ligh--grey: hsl(217, 12%, 63%);
+  --color--medium--grey: hsl(216, 12%, 54%);
+  --color--dark--blue: hsl(213, 19%, 18%);
+  --color--very--dark--blue: hsl(216, 12%, 8%);
+  --color--very--dark--blue-2: hsl(216, 12%, 22%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.container {
+  background-color: var(--color--very--dark--blue);
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__thank,
+.card__rating {
+  width: 26%;
+  background-color: var(--color--dark--blue);
+  padding: 2.4rem;
+  border-radius: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card__rating--icon {
+  background-color: var(--color--very--dark--blue-2);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon__star {
+  width: 1.4rem;
+}
+
+.primary-heading {
+  font-size: 2.4rem;
+  color: var(--color--white);
+  padding: 0.8rem 0 1rem 0;
+}
+
+.card__thank--text,
+.text {
+  color: var(--color--ligh--grey);
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+.card__rating--list {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.list__item {
+  list-style: none;
+  background-color: var(--color--very--dark--blue-2);
+  color: var(--color--ligh--grey);
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list__item:hover {
+  background-color: var(--color--primary--Orange);
+  color: var(--color--white);
+}
+
+.active {
+  background-color: var(--color--ligh--grey);
+  color: var(--color--white);
+}
+
+.card__rating--btn {
+  background: none;
+  border: none;
+  background-color: var(--color--primary--Orange);
+  padding: 1rem 0;
+  border-radius: 1.6rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color--white);
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.card__rating--btn:hover {
+  background-color: var(--color--white);
+  color: var(--color--primary--Orange);
+}
+
+/* Card thank you */
+.card__thank {
+  position: absolute;
+  align-items: center;
+}
+
+.icon__illustration {
+  width: 50%;
+}
+
+.card__thank--selected {
+  background-color: var(--color--very--dark--blue-2);
+  border-radius: 1.6rem;
+  padding: 0.8rem 1.6rem;
+}
+
+.card__thank-sub-text {
+  font-size: 1.3rem;
+  color: var(--color--secondary--Orange);
+}
+
+.heading__secondary {
+  color: var(--color--white);
+}
+
+.card__thank--text {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  background-color: var(--color--very--dark--blue);
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* 1200px */
+@media (max-width: 75em) {
+  .card__thank,
+  .card__rating {
+    width: 30%;
+  }
+}
+
+/* 1000px */
+@media (max-width: 62.5em) {
+  .card__thank,
+  .card__rating {
+    width: 40%;
+  }
+}
+
+/* 800px */
+@media (max-width: 50em) {
+  .card__thank,
+  .card__rating {
+    width: 50%;
+  }
+}
+
+/* 600px */
+@media (max-width: 37.5em) {
+  .card__thank,
+  .card__rating {
+    width: 70%;
+  }
+}
+
+/* 500px */
+@media (max-width: 31.25em) {
+  .card__thank,
+  .card__rating {
+    width: 80%;
+  }
+}
+
+/* 400px */
+@media (max-width: 26.6em) {
+  .card__thank,
+  .card__rating {
+    width: 90%;
+  }
+}
