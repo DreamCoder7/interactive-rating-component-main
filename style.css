@@ -168,7 +168,7 @@ body {
   background-color: var(--color--very--dark--blue);
   font-size: 11px;
   text-align: center;
-  font-size: 1.6rem;
+  color: var(--color--white);
 }
 .attribution a {
   color: var(--color--primary--Orange);
